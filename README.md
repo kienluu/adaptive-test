@@ -15,3 +15,9 @@ CREATE USER 'adaptivetest'@'localhost' IDENTIFIED BY 'adaptivetest;
 GRANT ALL ON adaptivetest.* TO 'adaptivetest'@'localhost';
 FLUSH PRIVILEGES;
 ```
+
+To begin a new database, run the django syncdb and south migrate commands
+```bash
+$ ./manage.py syncdb
+$ ./manage.py migrate
+```
