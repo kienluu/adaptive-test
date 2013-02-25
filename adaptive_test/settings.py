@@ -120,7 +120,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'south',
-    'adaptive_test.tweet'
+    'django_extensions',
+    'adaptive_test.tweet',
 )
 
 
