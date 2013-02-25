@@ -1,7 +1,4 @@
-import re
 from django.core.validators import MinLengthValidator, MinValueValidator, MaxValueValidator
-from django.utils.translation import ugettext_lazy as _
-from django.core.exceptions import ValidationError
 from django.db import models
 
 
