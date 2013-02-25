@@ -34,12 +34,15 @@ Model Tweet
 		timestamp.
 		datetime.
 	- followers
+		integer
 		number of followers
 	- message
 		string (There are no mentions of a max size of this field)
 		a status message
 	- user_handle
-		user model
+		foreignkey to TweetUser
+		starts with @
+		I'm guessing it can only contain the characters a-z A-Z 0-9 - _ after the @ sign
 		
 Model TweetUser
 	- handle
