@@ -21,3 +21,7 @@ To begin a new database, run the django syncdb and south migrate commands
 $ ./manage.py syncdb
 $ ./manage.py migrate
 ```
+
+### Others
+
+TODO: Create documentation for another user to setup this project
