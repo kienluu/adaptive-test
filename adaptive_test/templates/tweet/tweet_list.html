@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tweet List</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/css/styles.css">
+</head>
+<body class="tweet-list-page">
+    {% for tweet in tweet_list %}
+        <div class="tweet-box">
+            {{ tweet.message }}
+        </div>
+    {% endfor %}
+</body>
+</html>
