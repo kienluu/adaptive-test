@@ -1,11 +1,16 @@
 {% extends 'tweet/base.html' %}
 
+{% load url from future %}
+
+
 {% block html_title %}Tweet List{% endblock %}
 
 {% block main_content %}
     {% for tweet in tweet_list %}
-        <div class="tweet-box">
-            {{ tweet.message }}
-        </div>
+        <a href="{% url 'tweet_tweet_detail' pk=tweet.pk %}">
+            <div class="tweet-box">
+                {{ tweet.message }}
+            </div>
+        </a>
     {% endfor %}
 {% endblock %}
