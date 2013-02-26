@@ -14,6 +14,9 @@ class TweetUser(models.Model):
         self.full_clean()
         super(TweetUser, self).save()
 
+    def __unicode__(self):
+        return u'%s' % self.handle
+
 
 class Tweet(models.Model):
     user = models.ForeignKey(TweetUser)
@@ -29,5 +32,8 @@ class Tweet(models.Model):
     def save(self, *args, **kwargs):
         self.full_clean()
         super(Tweet, self).save()
+
+    def __unicode__(self):
+        return u'%s: %s' % (self.id, self.message[:20])
 
 
