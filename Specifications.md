@@ -42,7 +42,7 @@ Model Tweet
 	- user_handle
 		foreignkey to TweetUser
 		starts with @
-		I'm guessing it can only contain the characters a-z A-Z 0-9 - _ after the @ sign
+		I'm guessing it can only contain the characters a-z 0-9 - _ after the @ sign
 		
 Model TweetUser
 	- handle
