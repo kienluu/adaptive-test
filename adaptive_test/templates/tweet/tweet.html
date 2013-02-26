@@ -4,6 +4,7 @@
 
 {% block main_content %}
         <div class="tweet-box">
-            {{ tweet.message }}
+            <p>Sentiment Score: {{ tweet.sentiment }}</p>
+            <p>Followers: {{ tweet.followers }}</p>
         </div>
 {% endblock %}
