@@ -1,6 +1,7 @@
 #ADAPTIVE LABS TEST
 ===
 
+See specifications [here](https://github.com/kienluu/adaptive-test/edit/master/Specifications.md)
 
 ## SETUP
 ===
