@@ -28,6 +28,6 @@ class Tweet(models.Model):
 
     def save(self, *args, **kwargs):
         self.full_clean()
-        super(TweetUser, self).save()
+        super(Tweet, self).save()
 
 
