@@ -21,6 +21,7 @@ and store these in our own database.
 
 ### Models
 ===
+```
 Model Tweet
 	- id
 		primary key
@@ -48,10 +49,11 @@ Model TweetUser
 	- handle
 		string (No mention of a max number)
 		unique 
-		
+```
+
 ### Views
 ===
-
+```
 View tweet_list(keyword):
 	Will return a list of Tweets that contains one or more of the
 	keyword in the Tweet message field.
@@ -69,4 +71,5 @@ View tweet(id):
 	This view will display
 	- the sentiment score
 	- the number of people who have received the message (I assume this is the followers field)
+```
 
