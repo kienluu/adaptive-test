@@ -1,11 +1,9 @@
 {% extends 'tweet/base.html' %}
 
-{% block html_title %}Tweet List{% endblock %}
+{% block html_title %}Tweet{% endblock %}
 
 {% block main_content %}
-    {% for tweet in tweet_list %}
         <div class="tweet-box">
             {{ tweet.message }}
         </div>
-    {% endfor %}
 {% endblock %}
